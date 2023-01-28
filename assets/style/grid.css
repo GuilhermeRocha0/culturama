@@ -1,0 +1,91 @@
+.banner {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'ballet ballet'
+    'art theatre'
+    'photography theatre';
+}
+
+.banner img:nth-child(1) {
+  grid-area: ballet;
+}
+
+.banner img:nth-child(2) {
+  grid-area: art;
+}
+
+.banner img:nth-child(3) {
+  grid-area: photography;
+}
+
+.banner img:nth-child(4) {
+  grid-area: theatre;
+}
+
+.eventos__item {
+  display: grid;
+  row-gap: 0.8rem;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-template-areas:
+    'image image'
+    'name name'
+    'date date'
+    'local button';
+}
+
+.eventos__item img {
+  grid-area: image;
+}
+
+.eventos__item h3 {
+  grid-area: name;
+  align-self: flex-end;
+}
+
+.eventos__item h4 {
+  grid-area: date;
+}
+
+.eventos__item h5 {
+  grid-area: local;
+  align-self: flex-end;
+}
+
+.eventos__item button {
+  grid-area: button;
+}
+
+.agenda__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'image image'
+    'info name';
+}
+
+.agenda__item img {
+  grid-area: image;
+}
+
+.agenda__informacoes {
+  grid-area: info;
+}
+
+.agenda__atracao {
+  grid-area: name;
+}
+
+@media screen and (min-width: 720px) {
+  .banner {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'ballet ballet art theatre'
+      'ballet ballet photography theatre';
+  }
+}
