@@ -10,6 +10,6 @@ Projeto desenvolvido durante o curso <a href="https://www.alura.com.br/curso-onl
 ## Deployment
 
 <p>Link to the page: 
-<a href=""
+<a href="https://guilhermerocha0.github.io/culturama/"
 rel="noopener noreferrer" target="_blank">Culturama</a>
 </p>
