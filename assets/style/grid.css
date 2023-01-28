@@ -89,3 +89,32 @@
       'ballet ballet photography theatre';
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .categorias {
+    display: grid;
+    grid-template-areas:
+      'titulo destaque'
+      'lista imagem';
+    column-gap: 2.4rem;
+    row-gap: 1.6rem;
+    grid-template-columns: auto calc(50% - 1.2rem);
+    grid-template-rows: auto 1fr calc(auto - 5rem);
+  }
+
+  .categorias__titulo {
+    grid-area: titulo;
+  }
+
+  .categorias__lista {
+    grid-area: lista;
+  }
+
+  .categorias__destaques {
+    grid-area: destaque;
+  }
+
+  .categorias__imagem {
+    grid-area: imagem;
+  }
+}
